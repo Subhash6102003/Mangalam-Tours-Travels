@@ -152,7 +152,7 @@ export const explorePlaces = [
     duration: "1 Day Trip",
     price: "₹2,500 (Round Trip)",
     highlights: "Mahakal Darshan · Kshipra River · Ancient Temples",
-    image: "/img/ujjain.png",
+    image: "/ujjain.png",
   },
   {
     name: "Omkareshwar Jyotirlinga",
@@ -160,7 +160,7 @@ export const explorePlaces = [
     duration: "1-2 Days",
     price: "₹3,500 (Round Trip)",
     highlights: "Jyotirlinga · Narmada Parikrama · Island Temple",
-    image: "/img/omkaleshwar.png",
+    image: "/omkaleshwar.png",
   },
   {
     name: "Sanchi Stupa (UNESCO)",
@@ -168,7 +168,7 @@ export const explorePlaces = [
     duration: "Half Day",
     price: "₹1,800 (Round Trip)",
     highlights: "Buddhist Monuments · Ancient Architecture · Museum",
-    image: "/img/sanchi.png",
+    image: "/sanchi.png",
   },
   {
     name: "Bhojpur Shiv Temple",
@@ -176,7 +176,7 @@ export const explorePlaces = [
     duration: "Half Day",
     price: "₹1,200 (Round Trip)",
     highlights: "World's Tallest Shivling · Bhojeshwar Temple · Lake",
-    image: "/img/bhojpur_shiv_temple.png",
+    image: "/bhojpur_shiv_temple.png",
   },
   {
     name: "Pachmarhi Hill Station",
@@ -184,7 +184,7 @@ export const explorePlaces = [
     duration: "2-3 Days",
     price: "₹5,500 (Round Trip)",
     highlights: "Bee Falls · Pandav Caves · Dhupgarh Sunset Point",
-    image: "/img/pachmari.png",
+    image: "/pachmari.png",
   },
   {
     name: "Mandu Fort & Palaces",
@@ -192,7 +192,7 @@ export const explorePlaces = [
     duration: "2 Days",
     price: "₹6,000 (Round Trip)",
     highlights: "Jahaz Mahal · Rani Roopmati Pavilion · Hindola Mahal",
-    image: "/img/madhu palce.png",
+    image: "/madhu palce.png",
   },
 ];
 
