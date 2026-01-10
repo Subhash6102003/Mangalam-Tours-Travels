@@ -1,8 +1,22 @@
 import { explorePlaces } from "../data/content";
+import { contactDetails } from "../data/content";
 
-export const ExplorePlaces = () => (
+export const ExplorePlaces = () => {
+  const getWhatsAppLink = (placeName: string, price: string) => {
+    const message = encodeURIComponent(
+      `Hi, I want to book a trip to ${placeName} with Mangalam Tours And Travels. Date: ___ | Number of Passengers: ___ | Package: ${price}`
+    );
+    return `https://wa.me/${contactDetails.whatsapp.replace(/\D/g, "")}?text=${message}`;
+  };
+
+  return (
   <section className="bg-white py-16 dark:bg-background-dark">
     <div className="mx-auto max-w-6xl px-4 md:px-8">
+      <div className="mb-4 text-center">
+        <p className="text-xs font-bold uppercase tracking-widest text-primary/80">
+          Mangalam Tours And Travels
+        </p>
+      </div>
       <div className="mb-10 space-y-2 text-center">
         <p className="section-eyebrow">Explore Madhya Pradesh</p>
         <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">Famous Places & Temples</h2>
@@ -42,7 +56,9 @@ export const ExplorePlaces = () => (
               <p className="text-sm text-ink/70 dark:text-white/70">{place.highlights}</p>
               <div className="flex items-center justify-between pt-2">
                 <a
-                  href="#booking"
+                  href={getWhatsAppLink(place.name, place.price)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm font-semibold text-primary hover:text-primary-hover transition-colors"
                 >
                   Book This Trip
@@ -55,6 +71,7 @@ export const ExplorePlaces = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default ExplorePlaces;

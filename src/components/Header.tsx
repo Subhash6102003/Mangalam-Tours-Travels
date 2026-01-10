@@ -7,15 +7,15 @@ const navLinks = [
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/fleet", label: "Fleet" },
+  { to: "/explore", label: "Explore MP" },
   { to: "/booking", label: "Booking" },
-  { to: "/reviews", label: "Reviews" },
   { to: "/contact", label: "Contact" },
 ];
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
   const whatsappMessage = encodeURIComponent(
-    "Hi, I want to book a taxi with Mangalam Tours & Travels. Pickup: ___ | Drop: ___ | Date & Time: ___ | Car Type: ___"
+    "Hi, I want to book a taxi with Mangalam Tours And Travels. Pickup: ___ | Drop: ___ | Date & Time: ___ | Car Type: ___"
   );
 
   return (
@@ -27,7 +27,7 @@ export const Header = () => {
           </div>
           <div className="leading-tight">
             <p className="font-heading text-xl font-extrabold tracking-tight text-ink dark:text-white">Mangalam </p>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">Tours & Travels</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">Tours And Travels</p>
           </div>
         </Link>
 

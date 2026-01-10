@@ -1,11 +1,12 @@
 export const contactDetails = {
   phones: [
     { label: "Primary", number: "+91 9669285999" },
-    { label: "Support", number: "+91 9669285999" },
+    { label: "Support", number: "+91 9009234111" },
   ],
   email: "mangalamtourstravels19@gmail.com",
   address: "5-A Bhagat Singh Market Indrapuri, Bhopal, Madhya Pradesh, 462011",
   whatsapp: "+91 9669285999",
+  companyName: "Mangalam Tours And Travels",
 };
 
 export const services = [
@@ -47,7 +48,7 @@ export const services = [
   },
   {
     title: "MP Tour Packages",
-    description: "Curated MP circuits: Bhopal, Sanchi, Ujjain, Omkareshwar, Pachmarhi, Khajuraho.",
+    description: "Handpicked Madhya Pradesh circuits with customizable itineraries including hotels, sightseeing, and reliable transport. Experience Bhopal, Sanchi, Ujjain, Omkareshwar, Pachmarhi, Khajuraho, Mandu, and more.",
     price: "Tailored",
     icon: "map",
   },
@@ -67,8 +68,7 @@ export const fleet = [
     features: "AC · Airbags · Clean Interiors",
     rate: "₹12/km",
     tag: "City & Office",
-    image:
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=800&q=80",
+    image: "/hyundai-aura.jpeg",
   },
   {
     name: "Maruti Swift Dzire",
@@ -77,8 +77,7 @@ export const fleet = [
     features: "AC · Music System · GPS",
     rate: "₹12/km",
     tag: "Economy Sedan",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvB00ZTEDODLF_vcHWY9nnNqk1CcnxAOW1cgsUsb44FHbR4UsOeunkorArXHFo-Bl3pwcuKttVh2u9KfK4l8WCMs0NgGNKNiW5NkidOfOUxTijdELR3XFMcsiePbZgEe-53AGTX2VBSUpphau0mKuiW6ehdJcg1d-4JC24kdFDyhd9KJMRPgGv7JSA7XcNWHRbxCYzvOChOWq5zzoQJA8Zis1DcxIsT6FXCw-hTVq7JpH56XUe-WRkkmhRI5Jp0t_Z4dFpFzoNGv8l",
+    image: "/Maruti-Dzire.webp",
   },
   {
     name: "SUV / Innova",
@@ -87,8 +86,7 @@ export const fleet = [
     features: "AC · Captain seats · Music",
     rate: "₹18/km",
     tag: "Family & Airport",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAyFa0nYllv8Z_U9vzf12kBBBpENfvYR-C7XDeeVRpPzNmAMn2qwwzFC80cNeZjYlilOiUv0YpceX50LTZ4h2uikBYwS5k4qyvWtvfXUcrWVB8FylppxlrU1CVJ6A_nGEpyNDRD_JkyFryfEUkIXfKanZGUgySTP2jBpbIgZVdQ0k4BplQTwiGr7BpTykLtYYWrYBC0LmaGtELbMTCGIAng91K_PeSH-bgeZsbl9i253fIxbL33rJO91w87D_gA7uG93sId75ENjx0a",
+    image: "/Innova-Crysta.webp",
   },
   {
     name: "Luxury Traveler",
@@ -97,8 +95,7 @@ export const fleet = [
     features: "AC · Reclining seats · WiFi",
     rate: "₹25/km",
     tag: "Tour & Groups",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCKuUtpkO7m2HQBSwQz49sRC-7fkV8oBYisTXhAh9f4Fe6wRq0EzicdwkBDN2Ud-_bmQdaHUUuSLUBNo3d0thzQt2JOSLJ5t9yVEltW4ZJQldkkRgYHdzevs5UZ013qnrEZW3ZQWNKpeSukc2-hd3fBj2ikzY7O_sALnSeCsjpY5bNEiNfYqb1T1Z6Jqeg67ZwtHKeYsBt--BlfGdtdsfyQIZbrAe_mcUjwOWkY5P-8Xc3m6Ew_Quiouqgj0OT3pQtLepLtGbmrRKjx",
+    image: "/Tempo-Traveller-2.webp",
   },
   {
     name: "Toyota Etios",
@@ -107,8 +104,7 @@ export const fleet = [
     features: "AC · Comfortable · Reliable",
     rate: "₹13/km",
     tag: "Corporate Travel",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAyFa0nYllv8Z_U9vzf12kBBBpENfvYR-C7XDeeVRpPzNmAMn2qwwzFC80cNeZjYlilOiUv0YpceX50LTZ4h2uikBYwS5k4qyvWtvfXUcrWVB8FylppxlrU1CVJ6A_nGEpyNDRD_JkyFryfEUkIXfKanZGUgySTP2jBpbIgZVdQ0k4BplQTwiGr7BpTykLtYYWrYBC0LmaGtELbMTCGIAng91K_PeSH-bgeZsbl9i253fIxbL33rJO91w87D_gA7uG93sId75ENjx0a",
+    image: "/tata-tigor.webp",
   },
   {
     name: "Mahindra Scorpio",
@@ -117,31 +113,101 @@ export const fleet = [
     features: "AC · Powerful · Spacious",
     rate: "₹20/km",
     tag: "SUV Adventure",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAyFa0nYllv8Z_U9vzf12kBBBpENfvYR-C7XDeeVRpPzNmAMn2qwwzFC80cNeZjYlilOiUv0YpceX50LTZ4h2uikBYwS5k4qyvWtvfXUcrWVB8FylppxlrU1CVJ6A_nGEpyNDRD_JkyFryfEUkIXfKanZGUgySTP2jBpbIgZVdQ0k4BplQTwiGr7BpTykLtYYWrYBC0LmaGtELbMTCGIAng91K_PeSH-bgeZsbl9i253fIxbL33rJO91w87D_gA7uG93sId75ENjx0a",
+    image: "/scorpio.webp",
+  },
+  {
+    name: "Honda City",
+    seats: "4",
+    luggage: "3",
+    features: "AC · Premium Interiors · Smooth Ride",
+    rate: "₹14/km",
+    tag: "Premium Sedan",
+    image: "/Maruti-Dzire.webp",
+  },
+  {
+    name: "Maruti Ertiga",
+    seats: "6-7",
+    luggage: "4",
+    features: "AC · Spacious · Comfortable",
+    rate: "₹16/km",
+    tag: "Family MPV",
+    image: "/ertiga.png",
+  },
+  {
+    name: "Tata Nexon",
+    seats: "5",
+    luggage: "3",
+    features: "AC · Modern · Safety Rated",
+    rate: "₹15/km",
+    tag: "Compact SUV",
+    image: "/Innova-Crysta.webp",
   },
 ];
 
 export const packages = [
   {
-    name: "Ujjain & Omkareshwar",
+    name: "Ujjain & Omkareshwar Spiritual Circuit",
     days: "2N / 3D",
-    highlight: "Mahakaleshwar Darshan + Narmada Ghat",
+    highlight: "Mahakaleshwar Darshan + Narmada Ghat + Omkareshwar Jyotirlinga",
+    description: "Experience the divine aura of two sacred Jyotirlingas. Visit Mahakaleshwar Temple for Bhasma Aarti, explore the ancient Kshipra riverbank, and take a holy dip at Omkareshwar. Includes comfortable AC accommodation, all sightseeing, and experienced driver.",
+    inclusions: ["2 nights hotel stay", "All temple visits", "Breakfast & dinner", "AC vehicle with driver", "Fuel & toll charges"],
+    price: "Starting ₹8,999 per person",
   },
   {
     name: "Pachmarhi Hill Retreat",
     days: "3N / 4D",
-    highlight: "Bee Falls · Dhupgarh · Caves",
+    highlight: "Bee Falls · Dhupgarh · Pandav Caves · Jata Shankar",
+    description: "Escape to MP's only hill station nestled in Satpura ranges. Explore breathtaking waterfalls, ancient caves, and sunset viewpoints. Perfect for nature lovers and families seeking a refreshing getaway.",
+    inclusions: ["3 nights hotel accommodation", "All sightseeing tours", "Breakfast included", "AC transport", "Experienced guide"],
+    price: "Starting ₹12,999 per person",
   },
   {
-    name: "Sanchi & Bhimbetka",
+    name: "Sanchi & Bhimbetka Heritage Tour",
     days: "1N / 2D",
-    highlight: "UNESCO Stupa + Rock Shelters",
+    highlight: "UNESCO Stupa + Prehistoric Rock Shelters + Museum",
+    description: "Journey through time with visits to Buddhist monuments at Sanchi and ancient rock paintings at Bhimbetka. Ideal for history enthusiasts and cultural explorers.",
+    inclusions: ["1 night hotel stay", "All entry tickets", "Breakfast", "AC vehicle", "Expert guide"],
+    price: "Starting ₹4,999 per person",
   },
   {
-    name: "Khajuraho Heritage",
+    name: "Khajuraho Heritage Experience",
     days: "2N / 3D",
-    highlight: "Temple light show + Panna Safari",
+    highlight: "Temple Light & Sound Show + Panna Tiger Reserve Safari",
+    description: "Marvel at the world-famous Khajuraho temples with intricate sculptures. Enjoy the mesmerizing light & sound show and embark on an exciting jungle safari at Panna National Park.",
+    inclusions: ["2 nights premium hotel", "Temple tours with guide", "Light & sound show", "Jungle safari", "All meals", "AC transport"],
+    price: "Starting ₹11,999 per person",
+  },
+  {
+    name: "Bhopal Heritage & Lakes Tour",
+    days: "1N / 2D",
+    highlight: "Upper & Lower Lake · Taj-ul-Masajid · Bharat Bhavan · Van Vihar",
+    description: "Discover the City of Lakes with visits to Asia's largest mosque, museums, and boat rides on serene lakes. Experience the perfect blend of heritage, nature, and modernity.",
+    inclusions: ["1 night hotel stay", "All sightseeing", "Boat ride", "Breakfast", "AC vehicle with driver"],
+    price: "Starting ₹3,999 per person",
+  },
+  {
+    name: "Mandu Fort & Romance Circuit",
+    days: "2N / 3D",
+    highlight: "Jahaz Mahal · Rani Roopmati Pavilion · Hindola Mahal · Baz Bahadur Palace",
+    description: "Step into the legendary love story of Rani Roopmati and Baz Bahadur. Explore magnificent Afghan architecture, royal palaces, and enjoy panoramic views of Narmada valley.",
+    inclusions: ["2 nights accommodation", "All fort entries", "Meals included", "AC transport", "Local guide"],
+    price: "Starting ₹9,499 per person",
+  },
+  {
+    name: "Jabalpur Marble Rocks & Waterfalls",
+    days: "2N / 3D",
+    highlight: "Bhedaghat Marble Rocks · Dhuandhar Falls · Boat Ride · Chausath Yogini Temple",
+    description: "Witness the majestic white marble rocks glowing in moonlight and the thunderous Dhuandhar waterfall. Includes a memorable boat ride through the marble canyon.",
+    inclusions: ["2 nights hotel", "Boat ride tickets", "All sightseeing", "Breakfast & dinner", "AC vehicle"],
+    price: "Starting ₹7,999 per person",
+  },
+  {
+    name: "Complete MP Grand Tour",
+    days: "7N / 8D",
+    highlight: "Bhopal · Sanchi · Ujjain · Omkareshwar · Mandu · Pachmarhi · All highlights",
+    description: "The ultimate Madhya Pradesh experience covering spiritual sites, UNESCO heritage, hill stations, and royal forts. Customizable itinerary with premium hotels and experienced guides.",
+    inclusions: ["7 nights premium hotels", "All meals", "Complete sightseeing", "Expert guides", "AC luxury vehicle", "All entry fees"],
+    price: "Starting ₹24,999 per person",
   },
 ];
 
@@ -151,7 +217,7 @@ export const explorePlaces = [
     distance: "55 km from Bhopal",
     duration: "1 Day Trip",
     price: "₹2,500 (Round Trip)",
-    highlights: "Mahakal Darshan · Kshipra River · Ancient Temples",
+    highlights: "Mahakal Darshan · Kshipra River · Ancient Temples · Bhasma Aarti",
     image: "/ujjain.png",
   },
   {
@@ -159,7 +225,7 @@ export const explorePlaces = [
     distance: "140 km from Bhopal",
     duration: "1-2 Days",
     price: "₹3,500 (Round Trip)",
-    highlights: "Jyotirlinga · Narmada Parikrama · Island Temple",
+    highlights: "Jyotirlinga · Narmada Parikrama · Island Temple · Siddhanath Temple",
     image: "/omkaleshwar.png",
   },
   {
@@ -167,7 +233,7 @@ export const explorePlaces = [
     distance: "46 km from Bhopal",
     duration: "Half Day",
     price: "₹1,800 (Round Trip)",
-    highlights: "Buddhist Monuments · Ancient Architecture · Museum",
+    highlights: "Buddhist Monuments · Ancient Architecture · Museum · Stupas",
     image: "/sanchi.png",
   },
   {
@@ -175,7 +241,7 @@ export const explorePlaces = [
     distance: "28 km from Bhopal",
     duration: "Half Day",
     price: "₹1,200 (Round Trip)",
-    highlights: "World's Tallest Shivling · Bhojeshwar Temple · Lake",
+    highlights: "World's Tallest Shivling · Bhojeshwar Temple · Lake · Ancient Carvings",
     image: "/bhojpur_shiv_temple.png",
   },
   {
@@ -183,7 +249,7 @@ export const explorePlaces = [
     distance: "210 km from Bhopal",
     duration: "2-3 Days",
     price: "₹5,500 (Round Trip)",
-    highlights: "Bee Falls · Pandav Caves · Dhupgarh Sunset Point",
+    highlights: "Bee Falls · Pandav Caves · Dhupgarh Sunset Point · Jata Shankar",
     image: "/pachmari.png",
   },
   {
@@ -191,8 +257,56 @@ export const explorePlaces = [
     distance: "280 km from Bhopal",
     duration: "2 Days",
     price: "₹6,000 (Round Trip)",
-    highlights: "Jahaz Mahal · Rani Roopmati Pavilion · Hindola Mahal",
+    highlights: "Jahaz Mahal · Rani Roopmati Pavilion · Hindola Mahal · Baz Bahadur Palace",
     image: "/madhu palce.png",
+  },
+  {
+    name: "Jabalpur Marble Rocks",
+    distance: "330 km from Bhopal",
+    duration: "2 Days",
+    price: "₹7,500 (Round Trip)",
+    highlights: "Bhedaghat · Dhuandhar Falls · Boat Ride · Chausath Yogini Temple",
+    image: "/jabalpur marble rocks.jpeg",
+  },
+  {
+    name: "Khajuraho Temples",
+    distance: "380 km from Bhopal",
+    duration: "2-3 Days",
+    price: "₹8,500 (Round Trip)",
+    highlights: "UNESCO World Heritage · Erotic Sculptures · Light & Sound Show · Panna Safari",
+    image: "/khajuraho temples.jpeg",
+  },
+  {
+    name: "Chitrakoot Dham",
+    distance: "420 km from Bhopal",
+    duration: "2 Days",
+    price: "₹9,000 (Round Trip)",
+    highlights: "Ram Ghat · Hanuman Dhara · Kamadgiri Parikrama · Sphatik Shila",
+    image: "/Chitrakoot-ghat.jpg",
+  },
+  {
+    name: "Gwalior Fort & Palaces",
+    distance: "420 km from Bhopal",
+    duration: "1-2 Days",
+    price: "₹8,000 (Round Trip)",
+    highlights: "Man Singh Palace · Sas Bahu Temple · Teli Ka Mandir · Light Show",
+    image: "/gwalior fort.jpeg",
+  },
+  {
+    name: "Bandhavgarh National Park",
+    distance: "430 km from Bhopal",
+    duration: "2-3 Days",
+    price: "₹10,000 (Round Trip)",
+    highlights: "Tiger Safari · Wildlife Photography · Bandhavgarh Fort · Nature Trails",
+    image: "/Bandhavgarh National Park.jpeg",
+  },
+  {
+    name: "Amarkantak (Narmada Origin)",
+    distance: "340 km from Bhopal",
+    duration: "2 Days",
+    price: "₹7,500 (Round Trip)",
+    highlights: "Narmada Udgam · Ancient Temples · Kapildhara Falls · Sonmuda",
+    image: "/amarkantak.jpeg",
   },
 ];
 

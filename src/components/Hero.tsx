@@ -60,7 +60,7 @@ export const Hero = () => {
           <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-primary/15">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNcLiUNmj_U-ADfm7cK1JJ_lu_6mDIXSfZq2HyHj79HapCy4GmeKYI6dNPGfUQbIBcRLapKAApnORr9hJWtFMcNFu2PZy865Z8lX4EpAdHmeIbB830lpyPIdPNVUu8EF9M8bq0cyVSlSLuUMaQXrg20VVanLdPeHm069TWTSFpLM4i2H-MUDu8Nzv3rO1TWX2zkHiq_edxADvJWGuXQUOeY0Rm7sXPaQQXM5p2xkbt5CzWzoVpPOEllH-cQc5MRBQyaQazu6D2g9Uc"
-              alt="Luxury white sedan parked for Mangalam Tours & Travels"
+              alt="Luxury white sedan parked for Mangalam Tours And Travels"
               className="h-full w-full object-cover"
             />
           </div>

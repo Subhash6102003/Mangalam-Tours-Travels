@@ -6,7 +6,7 @@ const footerLinks = [
   { label: "About", to: "/about" },
   { label: "Fleet", to: "/fleet" },
   { label: "Booking", to: "/booking" },
-  { label: "Reviews", to: "/reviews" },
+  { label: "Explore MP", to: "/explore" },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -17,18 +17,25 @@ export const Footer = () => {
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-3xl text-primary">local_taxi</span>
-            <h2 className="text-xl font-extrabold">Mangalam Tours & Travels</h2>
+            <h2 className="text-xl font-extrabold">Mangalam Tours And Travels</h2>
           </div>
           <p className="text-sm text-white/70">
             Professional taxi, car rental, and Madhya Pradesh tour specialist based in Bhopal. Safety-first drivers, modern fleet, transparent fares.
           </p>
-          <div className="flex gap-3 text-sm">
+          <div className="flex flex-wrap gap-3 text-sm">
             <a
               className="flex items-center gap-2 rounded-lg bg-primary px-3 py-2 font-semibold text-white shadow-soft hover:bg-primary-hover"
               href={`tel:${contactDetails.phones[0].number.replace(/\s+/g, "")}`}
             >
               <span className="material-symbols-outlined text-base">call</span>
-              Call {contactDetails.phones[0].number}
+              Primary: {contactDetails.phones[0].number}
+            </a>
+            <a
+              className="flex items-center gap-2 rounded-lg bg-primary/20 px-3 py-2 font-semibold text-white shadow-soft hover:bg-primary/30"
+              href="tel:+919009234111"
+            >
+              <span className="material-symbols-outlined text-base">support_agent</span>
+              Support: +91 9009234111
             </a>
           </div>
         </div>
@@ -93,7 +100,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="border-t border-white/10 py-4 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} Mangalam Tours & Travels. All rights reserved.
+        © {new Date().getFullYear()} Mangalam Tours And Travels. All rights reserved.
       </div>
     </footer>
   );

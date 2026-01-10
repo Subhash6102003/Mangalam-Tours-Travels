@@ -4,7 +4,7 @@ const PrivacyPolicyPage = () => (
       <p className="section-eyebrow">Privacy Policy</p>
       <h1 className="section-title">How we handle your data</h1>
       <p className="text-sm text-ink/70 dark:text-white/70">
-        Mangalam Tours & Travels respects your privacy. We collect only the information needed to confirm and deliver your ride, such as name, contact number, pickup/drop details, and payment confirmations.
+        Mangalam Tours And Travels respects your privacy. We collect only the information needed to confirm and deliver your ride, such as name, contact number, pickup/drop details, and payment confirmations.
       </p>
       <div className="space-y-4 text-sm leading-relaxed text-ink/80 dark:text-white/70">
         <p>

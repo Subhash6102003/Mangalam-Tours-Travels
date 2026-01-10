@@ -1,9 +1,22 @@
 import { services } from "../data/content";
+import { contactDetails } from "../data/content";
 
 export const ServicesGrid = () => {
+  const getWhatsAppLink = (serviceName: string) => {
+    const message = encodeURIComponent(
+      `Hi, I want to book ${serviceName} with Mangalam Tours And Travels. Details: ___ | Date & Time: ___ | Requirements: ___`
+    );
+    return `https://wa.me/${contactDetails.whatsapp.replace(/\D/g, "")}?text=${message}`;
+  };
+
   return (
     <section className="bg-white py-16 dark:bg-background-dark">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mb-4 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-primary/80">
+            Mangalam Tours And Travels
+          </p>
+        </div>
         <div className="mb-10 space-y-2 text-center">
           <p className="section-eyebrow">Services</p>
           <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">Taxi solutions for every need</h2>
@@ -26,9 +39,14 @@ export const ServicesGrid = () => {
               <p className="text-sm leading-relaxed text-ink/70 dark:text-white/70">{service.description}</p>
               <div className="mt-auto flex items-center justify-between pt-2 text-sm font-semibold text-primary">
                 <span>{service.price}</span>
-                <button className="rounded-lg px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary hover:bg-primary/10">
+                <a
+                  href={getWhatsAppLink(service.title)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary hover:bg-primary/10 transition-colors"
+                >
                   Book Now
-                </button>
+                </a>
               </div>
             </article>
           ))}

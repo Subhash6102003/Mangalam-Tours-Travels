@@ -3,10 +3,10 @@ import CTASection from "../components/CTASection";
 const About = () => (
   <main className="bg-white py-16 dark:bg-background-dark">
     <div className="mx-auto max-w-5xl space-y-6 px-4 md:px-8">
-      <p className="section-eyebrow">About Mangalam Tours & Travels</p>
+      <p className="section-eyebrow">About Mangalam Tours And Travels</p>
       <h1 className="section-title">Safe, reliable, and hospitality-driven</h1>
       <p className="text-lg leading-relaxed text-ink/80 dark:text-white/70">
-        Mangalam Tours & Travels is a professional taxi and car rental service based in Bhopal. We specialize in local city rides, airport transfers, outstation trips, corporate travel, wedding car rentals, and customized Madhya Pradesh tour packages. With a modern fleet, experienced chauffeurs, and 24×7 customer support, we ensure comfort, punctuality, and peace of mind for every journey.
+        Mangalam Tours And Travels is a professional taxi and car rental service based in Bhopal. We specialize in local city rides, airport transfers, outstation trips, corporate travel, wedding car rentals, and customized Madhya Pradesh tour packages. With a modern fleet, experienced chauffeurs, and 24×7 customer support, we ensure comfort, punctuality, and peace of mind for every journey.
       </p>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {[

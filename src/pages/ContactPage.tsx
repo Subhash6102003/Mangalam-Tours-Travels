@@ -16,7 +16,7 @@ const ContactPage = () => (
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-4 md:px-8 md:grid-cols-2">
         <div className="space-y-4 rounded-2xl border border-zinc-100 bg-white p-6 shadow-soft dark:border-zinc-700 dark:bg-surface-dark">
           <h2 className="text-xl font-bold text-ink dark:text-white">Reach us</h2>
-          <p className="text-sm text-ink/70 dark:text-white/70">Mangalam Tours & Travels</p>
+          <p className="text-sm text-ink/70 dark:text-white/70">Mangalam Tours And Travels</p>
           <div className="space-y-3 text-sm text-ink/80 dark:text-white/70">
             <div className="flex gap-2">
               <span className="material-symbols-outlined text-primary">location_on</span>
@@ -51,7 +51,7 @@ const ContactPage = () => (
               </a>
             </li>
             <li>
-              <a href="tel:+919669285999" className="flex items-center gap-2 hover:text-primary-hover">
+              <a href="tel:+919009234111" className="flex items-center gap-2 hover:text-primary-hover">
                 <span className="material-symbols-outlined text-base">phone_in_talk</span>
                 Call support: +91 9669285999
               </a>
@@ -59,7 +59,7 @@ const ContactPage = () => (
             <li>
               <a href="tel:+919669285999" className="flex items-center gap-2 hover:text-primary-hover">
                 <span className="material-symbols-outlined text-base">phone_android</span>
-                Booking line: +91 9669285999
+                Booking line: +91 9009234111
               </a>
             </li>
           </ul>

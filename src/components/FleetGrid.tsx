@@ -1,9 +1,22 @@
 import { fleet } from "../data/content";
+import { contactDetails } from "../data/content";
 
 export const FleetGrid = () => {
+  const getWhatsAppLink = (carName: string) => {
+    const message = encodeURIComponent(
+      `Hi, I want to book ${carName} with Mangalam Tours And Travels. Pickup: ___ | Drop: ___ | Date & Time: ___ | Number of Passengers: ___`
+    );
+    return `https://wa.me/${contactDetails.whatsapp.replace(/\D/g, "")}?text=${message}`;
+  };
+
   return (
     <section className="bg-[#f5f5f5] py-16 dark:bg-zinc-900">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mb-4 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-primary/80">
+            Mangalam Tours And Travels
+          </p>
+        </div>
         <div className="mb-10 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="section-eyebrow">Fleet</p>
@@ -47,7 +60,12 @@ export const FleetGrid = () => {
                 </div>
                 <p className="text-sm text-ink/70 dark:text-white/70">{car.features}</p>
                 <div className="flex items-center justify-between pt-2">
-                  <a href="#booking" className="text-sm font-semibold text-primary hover:text-primary-hover">
+                  <a 
+                    href={getWhatsAppLink(car.name)} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-primary hover:text-primary-hover transition-colors"
+                  >
                     Book this car
                   </a>
                   <span className="material-symbols-outlined text-primary">chevron_right</span>
