@@ -1,8 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
+import LoadingScreen from "./components/LoadingScreen";
 import About from "./pages/About";
 import BookingPage from "./pages/BookingPage";
 import ContactPage from "./pages/ContactPage";
@@ -15,9 +17,12 @@ import TermsPage from "./pages/TermsPage";
 import ExplorePage from "./pages/ExplorePage";
 
 function App() {
+  const [showLoading, setShowLoading] = useState(true);
+
   return (
     <div className="min-h-screen bg-background-light text-ink dark:bg-background-dark dark:text-white">
       <SpeedInsights />
+      {showLoading && <LoadingScreen onLoadingComplete={() => setShowLoading(false)} />}
       <ScrollToTop />
       <Header />
       <Routes>
