@@ -13,49 +13,41 @@ export const services = [
   {
     title: "One Way Taxi",
     description: "Affordable point-to-point drops with instant confirmation and live driver tracking.",
-    price: "₹12/km",
     icon: "directions_car",
   },
   {
     title: "Round Trip Taxi",
     description: "Comfortable return journeys with the same driver and well-planned stopovers.",
-    price: "₹10/km (return)",
     icon: "cached",
   },
   {
     title: "Airport Transfers",
     description: "On-time pickups for Raja Bhoj Airport with flight tracking and meet & greet.",
-    price: "Flat fares",
     icon: "flight_takeoff",
   },
   {
     title: "Local City Rides",
     description: "Full-day and half-day rentals for errands, shopping, and meetings.",
-    price: "From ₹999",
     icon: "location_city",
   },
   {
     title: "Corporate Travel",
     description: "Executive cars with pro chauffeurs, invoices, and SLA-driven operations.",
-    price: "Custom plans",
     icon: "business_center",
   },
   {
     title: "Wedding Car Rental",
     description: "Decor-ready luxury cars and SUVs for weddings and premium events.",
-    price: "Best-day quotes",
     icon: "favorite",
   },
   {
     title: "MP Tour Packages",
     description: "Handpicked Madhya Pradesh circuits with customizable itineraries including hotels, sightseeing, and reliable transport. Experience Bhopal, Sanchi, Ujjain, Omkareshwar, Pachmarhi, Khajuraho, Mandu, and more.",
-    price: "Tailored",
     icon: "map",
   },
   {
     title: "Emergency / Night Travel",
     description: "24×7 helpline with safe, verified drivers for urgent rides and night drops.",
-    price: "24x7 support",
     icon: "nightlight",
   },
 ];
@@ -142,6 +134,15 @@ export const fleet = [
     tag: "Compact SUV",
     image: "/Innova-Crysta.webp",
   },
+  {
+    name: "Force Urbania",
+    seats: "8-12",
+    luggage: "6",
+    features: "AC · Premium Seating · WiFi Available",
+    rate: "₹32/km",
+    tag: "Premium Group Travel",
+    image: "/urbania.jpeg",
+  },
 ];
 
 export const packages = [
@@ -151,7 +152,6 @@ export const packages = [
     highlight: "Mahakaleshwar Darshan + Narmada Ghat + Omkareshwar Jyotirlinga",
     description: "Experience the divine aura of two sacred Jyotirlingas. Visit Mahakaleshwar Temple for Bhasma Aarti, explore the ancient Kshipra riverbank, and take a holy dip at Omkareshwar. Includes comfortable AC accommodation, all sightseeing, and experienced driver.",
     inclusions: ["2 nights hotel stay", "All temple visits", "Breakfast & dinner", "AC vehicle with driver", "Fuel & toll charges"],
-    price: "Starting ₹8,999 per person",
   },
   {
     name: "Pachmarhi Hill Retreat",
@@ -159,7 +159,6 @@ export const packages = [
     highlight: "Bee Falls · Dhupgarh · Pandav Caves · Jata Shankar",
     description: "Escape to MP's only hill station nestled in Satpura ranges. Explore breathtaking waterfalls, ancient caves, and sunset viewpoints. Perfect for nature lovers and families seeking a refreshing getaway.",
     inclusions: ["3 nights hotel accommodation", "All sightseeing tours", "Breakfast included", "AC transport", "Experienced guide"],
-    price: "Starting ₹12,999 per person",
   },
   {
     name: "Sanchi & Bhimbetka Heritage Tour",
@@ -167,7 +166,6 @@ export const packages = [
     highlight: "UNESCO Stupa + Prehistoric Rock Shelters + Museum",
     description: "Journey through time with visits to Buddhist monuments at Sanchi and ancient rock paintings at Bhimbetka. Ideal for history enthusiasts and cultural explorers.",
     inclusions: ["1 night hotel stay", "All entry tickets", "Breakfast", "AC vehicle", "Expert guide"],
-    price: "Starting ₹4,999 per person",
   },
   {
     name: "Khajuraho Heritage Experience",
@@ -175,7 +173,6 @@ export const packages = [
     highlight: "Temple Light & Sound Show + Panna Tiger Reserve Safari",
     description: "Marvel at the world-famous Khajuraho temples with intricate sculptures. Enjoy the mesmerizing light & sound show and embark on an exciting jungle safari at Panna National Park.",
     inclusions: ["2 nights premium hotel", "Temple tours with guide", "Light & sound show", "Jungle safari", "All meals", "AC transport"],
-    price: "Starting ₹11,999 per person",
   },
   {
     name: "Bhopal Heritage & Lakes Tour",
@@ -183,7 +180,6 @@ export const packages = [
     highlight: "Upper & Lower Lake · Taj-ul-Masajid · Bharat Bhavan · Van Vihar",
     description: "Discover the City of Lakes with visits to Asia's largest mosque, museums, and boat rides on serene lakes. Experience the perfect blend of heritage, nature, and modernity.",
     inclusions: ["1 night hotel stay", "All sightseeing", "Boat ride", "Breakfast", "AC vehicle with driver"],
-    price: "Starting ₹3,999 per person",
   },
   {
     name: "Mandu Fort & Romance Circuit",
@@ -191,7 +187,6 @@ export const packages = [
     highlight: "Jahaz Mahal · Rani Roopmati Pavilion · Hindola Mahal · Baz Bahadur Palace",
     description: "Step into the legendary love story of Rani Roopmati and Baz Bahadur. Explore magnificent Afghan architecture, royal palaces, and enjoy panoramic views of Narmada valley.",
     inclusions: ["2 nights accommodation", "All fort entries", "Meals included", "AC transport", "Local guide"],
-    price: "Starting ₹9,499 per person",
   },
   {
     name: "Jabalpur Marble Rocks & Waterfalls",
@@ -199,7 +194,6 @@ export const packages = [
     highlight: "Bhedaghat Marble Rocks · Dhuandhar Falls · Boat Ride · Chausath Yogini Temple",
     description: "Witness the majestic white marble rocks glowing in moonlight and the thunderous Dhuandhar waterfall. Includes a memorable boat ride through the marble canyon.",
     inclusions: ["2 nights hotel", "Boat ride tickets", "All sightseeing", "Breakfast & dinner", "AC vehicle"],
-    price: "Starting ₹7,999 per person",
   },
   {
     name: "Complete MP Grand Tour",
@@ -207,7 +201,6 @@ export const packages = [
     highlight: "Bhopal · Sanchi · Ujjain · Omkareshwar · Mandu · Pachmarhi · All highlights",
     description: "The ultimate Madhya Pradesh experience covering spiritual sites, UNESCO heritage, hill stations, and royal forts. Customizable itinerary with premium hotels and experienced guides.",
     inclusions: ["7 nights premium hotels", "All meals", "Complete sightseeing", "Expert guides", "AC luxury vehicle", "All entry fees"],
-    price: "Starting ₹24,999 per person",
   },
 ];
 
@@ -216,7 +209,6 @@ export const explorePlaces = [
     name: "Ujjain Mahakaleshwar Temple",
     distance: "55 km from Bhopal",
     duration: "1 Day Trip",
-    price: "₹2,500 (Round Trip)",
     highlights: "Mahakal Darshan · Kshipra River · Ancient Temples · Bhasma Aarti",
     image: "/ujjain.png",
   },
@@ -224,7 +216,6 @@ export const explorePlaces = [
     name: "Omkareshwar Jyotirlinga",
     distance: "140 km from Bhopal",
     duration: "1-2 Days",
-    price: "₹3,500 (Round Trip)",
     highlights: "Jyotirlinga · Narmada Parikrama · Island Temple · Siddhanath Temple",
     image: "/omkaleshwar.png",
   },
@@ -232,7 +223,6 @@ export const explorePlaces = [
     name: "Sanchi Stupa (UNESCO)",
     distance: "46 km from Bhopal",
     duration: "Half Day",
-    price: "₹1,800 (Round Trip)",
     highlights: "Buddhist Monuments · Ancient Architecture · Museum · Stupas",
     image: "/sanchi.png",
   },
@@ -240,7 +230,6 @@ export const explorePlaces = [
     name: "Bhojpur Shiv Temple",
     distance: "28 km from Bhopal",
     duration: "Half Day",
-    price: "₹1,200 (Round Trip)",
     highlights: "World's Tallest Shivling · Bhojeshwar Temple · Lake · Ancient Carvings",
     image: "/bhojpur_shiv_temple.png",
   },
@@ -248,7 +237,6 @@ export const explorePlaces = [
     name: "Pachmarhi Hill Station",
     distance: "210 km from Bhopal",
     duration: "2-3 Days",
-    price: "₹5,500 (Round Trip)",
     highlights: "Bee Falls · Pandav Caves · Dhupgarh Sunset Point · Jata Shankar",
     image: "/pachmari.png",
   },
@@ -256,7 +244,6 @@ export const explorePlaces = [
     name: "Mandu Fort & Palaces",
     distance: "280 km from Bhopal",
     duration: "2 Days",
-    price: "₹6,000 (Round Trip)",
     highlights: "Jahaz Mahal · Rani Roopmati Pavilion · Hindola Mahal · Baz Bahadur Palace",
     image: "/madhu palce.png",
   },
@@ -264,7 +251,6 @@ export const explorePlaces = [
     name: "Jabalpur Marble Rocks",
     distance: "330 km from Bhopal",
     duration: "2 Days",
-    price: "₹7,500 (Round Trip)",
     highlights: "Bhedaghat · Dhuandhar Falls · Boat Ride · Chausath Yogini Temple",
     image: "/jabalpur marble rocks.jpeg",
   },
@@ -272,7 +258,6 @@ export const explorePlaces = [
     name: "Khajuraho Temples",
     distance: "380 km from Bhopal",
     duration: "2-3 Days",
-    price: "₹8,500 (Round Trip)",
     highlights: "UNESCO World Heritage · Erotic Sculptures · Light & Sound Show · Panna Safari",
     image: "/khajuraho temples.jpeg",
   },
@@ -280,7 +265,6 @@ export const explorePlaces = [
     name: "Chitrakoot Dham",
     distance: "420 km from Bhopal",
     duration: "2 Days",
-    price: "₹9,000 (Round Trip)",
     highlights: "Ram Ghat · Hanuman Dhara · Kamadgiri Parikrama · Sphatik Shila",
     image: "/Chitrakoot-ghat.jpg",
   },
@@ -288,7 +272,6 @@ export const explorePlaces = [
     name: "Gwalior Fort & Palaces",
     distance: "420 km from Bhopal",
     duration: "1-2 Days",
-    price: "₹8,000 (Round Trip)",
     highlights: "Man Singh Palace · Sas Bahu Temple · Teli Ka Mandir · Light Show",
     image: "/gwalior fort.jpeg",
   },
@@ -296,7 +279,6 @@ export const explorePlaces = [
     name: "Bandhavgarh National Park",
     distance: "430 km from Bhopal",
     duration: "2-3 Days",
-    price: "₹10,000 (Round Trip)",
     highlights: "Tiger Safari · Wildlife Photography · Bandhavgarh Fort · Nature Trails",
     image: "/Bandhavgarh National Park.jpeg",
   },
@@ -304,7 +286,6 @@ export const explorePlaces = [
     name: "Amarkantak (Narmada Origin)",
     distance: "340 km from Bhopal",
     duration: "2 Days",
-    price: "₹7,500 (Round Trip)",
     highlights: "Narmada Udgam · Ancient Temples · Kapildhara Falls · Sonmuda",
     image: "/amarkantak.jpeg",
   },
@@ -312,19 +293,124 @@ export const explorePlaces = [
 
 export const reviews = [
   {
+    name: "Rajiv Sinha",
+    rating: 5,
+    text: "Great service by mangalam Tour and Travels and very professional. Our trip went smoothly without any issues. Good vehicle, good driver, and proper coordination. Totally worth the money. Highly recommended!",
+  },
+  {
     name: "Sandeep Pawar",
     rating: 5,
     text: "Very good services very good behaviour very good vehicle cleaning and drivers thank you my trip manglam tours and travels",
   },
   {
-    name: "K.L. Verma (LIC)",
+    name: "Irfan Siddiqui",
     rating: 5,
-    text: "बहुत ही अच्छी सर्विसेज है मंगलम टूर्स एंड ट्रैवल्स। हम मंगलम से 16 सीटर गाड़ी करके उज्जैन, ओंकारेश्वर के लिए गए थे। भैया ने बहुत अच्छी सर्विस दी।",
+    text: "Very good services mangalam tours and travels. Thank you nice Pachmarhi trip",
+  },
+  {
+    name: "Raj Aryan",
+    rating: 5,
+    text: "We went to Madhai and it was a wonderful experience. The driver was polite and great driving skills",
+  },
+  {
+    name: "Harsh",
+    rating: 5,
+    text: "Very good services very good drivers very good vehicle thank you manglam tours and travels.",
+  },
+  {
+    name: "Vijay Rao",
+    rating: 5,
+    text: "Very nice services Mangalam tours And travels",
+  },
+  {
+    name: "Tanishq Samaiya",
+    rating: 5,
+    text: "Great service and excellent drivers, clean and well maintained cars and mini buses",
   },
   {
     name: "Ganpat Mumbai",
     rating: 5,
     text: "Very good services mangalam tours and travels raj Bhaiya. Excellent experience and professional service.",
+  },
+  {
+    name: "Piyush Singh",
+    rating: 5,
+    text: "Very good services Mangalam tours and travels thank you",
+  },
+  {
+    name: "Nimish Kushwah",
+    rating: 5,
+    text: "Trimbakeshwar Trip very amazing journey with Mangalam tours and travels",
+  },
+  {
+    name: "Rajendra Kumar Sahu",
+    rating: 5,
+    text: "The owner and staff were very friendly, and the service was excellent.",
+  },
+  {
+    name: "Yash Bhawsar",
+    rating: 5,
+    text: "Great service by driver and the team love the ride",
+  },
+  {
+    name: "Anshuman Awasthi",
+    rating: 5,
+    text: "Manglam tours and travels is good and give convenience at good price",
+  },
+  {
+    name: "Daksh Suri",
+    rating: 5,
+    text: "Good drivers with friendly nature, safe ride Happy ride",
+  },
+  {
+    name: "Hritik Sharma",
+    rating: 5,
+    text: "I like your service and car condition.",
+  },
+  {
+    name: "Azad Mishra",
+    rating: 5,
+    text: "We went to Sanchi and it was a wonderful experience. The driver was polite and great driving skills",
+  },
+  {
+    name: "Aryan Jain",
+    rating: 5,
+    text: "Very good",
+  },
+  {
+    name: "Mummas",
+    rating: 5,
+    text: "Good",
+  },
+  {
+    name: "Rahul Vishwkarma",
+    rating: 5,
+    text: "Very good services mangalam tours And travels.",
+  },
+  {
+    name: "Prateek Choudhary",
+    rating: 5,
+    text: "Very good services mangalam tours and travels Indrapuri",
+  },
+  {
+    name: "Chandan Singh Jadaun",
+    rating: 5,
+    text: "Outstanding",
+  },
+  {
+    name: "Vinamra Jaiswal",
+    rating: 5,
+    text: "Very good services Mangalagiri tours & Traveles",
+  },
+  {
+    name: "Tanmay Patel",
+    rating: 5,
+    text: "Excellent service and people",
+  },
+  {
+    name: "K.L. Verma (LIC)",
+    rating: 5,
+    text: "बहुत ही अच्छी सर्विसेज है मंगलम टूर्स एंड ट्रैवल्स। हम मंगलम से 16 सीटर गाड़ी करके उज्जैन, ओंकारेश्वर के लिए गए थे। भैया ने बहुत अच्छी सर्विस दी।",
   },
   {
     name: "Ritika S.",
@@ -340,6 +426,63 @@ export const reviews = [
     name: "Dr. Meera K.",
     rating: 4.5,
     text: "Booked Innova for parents' Ujjain darshan. Driver was courteous and patient.",
+  },
+];
+
+export const jungleSafaris = [
+  {
+    name: "Ranthambhore National Park",
+    distance: "550 km from Bhopal",
+    duration: "2-3 Days",
+    highlights: "Royal Bengal Tigers · Historic Fort · Wildlife Photography · Lake Safaris",
+    description: "One of India's most renowned tiger reserves, famous for its majestic tigers and historic Ranthambhore Fort. Mangalam Tours and Travels has special tie-ups with expert trip teams for priority safari bookings and exclusive wildlife experiences.",
+    inclusions: ["Multiple safari sessions", "Expert naturalist guides", "Tiger tracking assistance", "Resort bookings", "Complete transportation & permits"],
+    image: "/Ranthambhore National park.jpeg",
+  },
+  {
+    name: "Satpura National Park - Madhai Zone",
+    distance: "180 km from Bhopal",
+    duration: "2-3 Days",
+    highlights: "Walking Safari · Boat Safari · Tiger Tracking · Bird Watching · Churna Zone",
+    description: "Experience unique safari options at Satpura's Madhai zone including walking safaris and boat rides. Our special partnership ensures you get the best safari experiences with expert naturalists in this pristine wilderness.",
+    inclusions: ["Walking safari permits", "Boat safari bookings", "Multiple safari options", "Expert naturalists", "Accommodation & transport"],
+    image: "/Satpura National park  - Madhai Zone.jpeg",
+  },
+  {
+    name: "Kanha National Park",
+    distance: "380 km from Bhopal",
+    duration: "2-3 Days",
+    highlights: "Tiger Safari · Barasingha Deer · Jungle Trails · Bamni Dadar Sunset Point",
+    description: "Discover the inspiration behind Rudyard Kipling's Jungle Book. Our exclusive arrangements include premium safari slots and experienced naturalists to enhance your wildlife experience at this magnificent park.",
+    inclusions: ["Morning & evening safaris", "Expert guides", "Nature interpretation", "Accommodation support", "Complete travel logistics"],
+    image: "/Kanha National Park.jpeg",
+  },
+  {
+    name: "Bandhavgarh National Park",
+    distance: "430 km from Bhopal",
+    duration: "2-3 Days",
+    highlights: "Highest Tiger Density · Fort Visit · Bird Watching · Nature Walks",
+    description: "Explore one of India's most famous tiger reserves with the highest density of Bengal tigers. Our special tie-up ensures priority bookings and expert guidance throughout your wildlife adventure.",
+    inclusions: ["Multiple safari sessions", "Expert wildlife guides", "Tiger tracking assistance", "Resort bookings", "Transportation & permits"],
+    image: "/Bandhavgarh National Park.jpeg",
+  },
+  {
+    name: "Tadoba National Park",
+    distance: "480 km from Bhopal",
+    duration: "2-3 Days",
+    highlights: "Tiger Safari · Tadoba Lake · Sloth Bears · Wildlife Photography",
+    description: "Maharashtra's oldest and largest national park, known for frequent tiger sightings. Mangalam Tours and Travels arranges exclusive safari experiences with expert guides and comfortable accommodations.",
+    inclusions: ["Safari jeep bookings", "Expert naturalists", "Photography assistance", "Resort coordination", "All transportation"],
+    image: "/Tadoba National Park.jpeg",
+  },
+  {
+    name: "Pench National Park",
+    distance: "310 km from Bhopal",
+    duration: "2 Days",
+    highlights: "Tiger Safari · Mowgli Land · Wildlife Photography · Jungle Camping",
+    description: "Visit the real Mowgli land where Shere Khan roamed. Our exclusive tie-ups provide premium safari experiences and comfortable accommodation options near the reserve in this beautiful landscape.",
+    inclusions: ["Safari jeep arrangements", "Expert guides", "Photography support", "Resort bookings", "All transportation"],
+    image: "/Pench National Park.jpeg",
   },
 ];
 

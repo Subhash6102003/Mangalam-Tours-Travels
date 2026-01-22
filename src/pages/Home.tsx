@@ -1,9 +1,9 @@
 import BookingForm from "../components/BookingForm";
 import CTASection from "../components/CTASection";
 import ExplorePlaces from "../components/ExplorePlaces";
-import FareTransparency from "../components/FareTransparency";
 import FleetGrid from "../components/FleetGrid";
 import Hero from "../components/Hero";
+import JungleSafari from "../components/JungleSafari";
 import Packages from "../components/Packages";
 import Reviews from "../components/Reviews";
 import ServicesGrid from "../components/ServicesGrid";
@@ -13,10 +13,10 @@ const Home = () => {
     <main>
       <Hero />
       <BookingForm />
-      <FareTransparency />
       <ServicesGrid />
       <FleetGrid />
       <ExplorePlaces />
+      <JungleSafari />
       <Packages />
       <Reviews />
       <CTASection />

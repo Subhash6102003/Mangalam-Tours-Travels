@@ -1,5 +1,4 @@
 import CTASection from "../components/CTASection";
-import FareTransparency from "../components/FareTransparency";
 import FleetGrid from "../components/FleetGrid";
 
 const FleetPage = () => (
@@ -14,7 +13,6 @@ const FleetPage = () => (
       </div>
     </section>
     <FleetGrid />
-    <FareTransparency />
     <CTASection />
   </main>
 );

@@ -7,6 +7,7 @@ const footerLinks = [
   { label: "Fleet", to: "/fleet" },
   { label: "Booking", to: "/booking" },
   { label: "Explore MP", to: "/explore" },
+  { label: "Jungle Safari", to: "/jungle-safari" },
   { label: "Contact", to: "/contact" },
 ];
 

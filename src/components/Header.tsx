@@ -8,6 +8,7 @@ const navLinks = [
   { to: "/services", label: "Services" },
   { to: "/fleet", label: "Fleet" },
   { to: "/explore", label: "Explore MP" },
+  { to: "/jungle-safari", label: "Jungle Safari" },
   { to: "/booking", label: "Booking" },
   { to: "/contact", label: "Contact" },
 ];
