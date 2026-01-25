@@ -1,9 +1,24 @@
 import { contactDetails } from "../data/content";
+import { sendConversionEvent } from "../utils/gtag";
 
 const FloatingActionButtons = () => {
   const whatsappMessage = encodeURIComponent(
     "Hi, I want to book a taxi with Mangalam Tours And Travels. Pickup: ___ | Drop: ___ | Date & Time: ___ | Car Type: ___"
   );
+
+  const handleWhatsAppClick = () => {
+    sendConversionEvent('contact_whatsapp', {
+      'event_category': 'Contact',
+      'event_label': 'WhatsApp Click - Floating Button'
+    });
+  };
+
+  const handleCallClick = () => {
+    sendConversionEvent('contact_call', {
+      'event_category': 'Contact',
+      'event_label': 'Call Click - Floating Button'
+    });
+  };
 
   return (
     <div className="fixed bottom-6 left-0 right-0 z-40 flex justify-between px-4 md:hidden">
@@ -12,6 +27,7 @@ const FloatingActionButtons = () => {
         href={`https://wa.me/${contactDetails.whatsapp.replace(/\D/g, "")}?text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleWhatsAppClick}
         className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20bd5a] transition-all hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
@@ -27,6 +43,7 @@ const FloatingActionButtons = () => {
       {/* Call Button */}
       <a
         href={`tel:${contactDetails.phones[0].number.replace(/\s+/g, "")}`}
+        onClick={handleCallClick}
         className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-lg hover:bg-primary-hover transition-all hover:scale-110"
         aria-label="Call us"
       >

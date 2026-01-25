@@ -1,6 +1,6 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
@@ -17,9 +17,19 @@ import ServicesPage from "./pages/ServicesPage";
 import TermsPage from "./pages/TermsPage";
 import ExplorePage from "./pages/ExplorePage";
 import JungleSafariPage from "./pages/JungleSafariPage";
+import { sendPageViewConversion, trackPageView } from "./utils/gtag";
 
 function App() {
   const [showLoading, setShowLoading] = useState(true);
+  const location = useLocation();
+
+  // Track page views with Google Ads conversion tracking
+  useEffect(() => {
+    // Send page view conversion event
+    sendPageViewConversion();
+    // Track the specific page path
+    trackPageView(location.pathname + location.search);
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-background-light text-ink dark:bg-background-dark dark:text-white">

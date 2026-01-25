@@ -1,6 +1,39 @@
 import { contactDetails } from "../data/content";
+import { sendBookingConversion, sendConversionEvent } from "../utils/gtag";
 
 export const BookingForm = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Track booking conversion
+    sendBookingConversion();
+    
+    // Additional tracking for form submission
+    sendConversionEvent('submit_form', {
+      'event_category': 'Booking',
+      'event_label': 'Booking Form Submission'
+    });
+    
+    // Get form data
+    const formData = new FormData(e.currentTarget);
+    const phone = contactDetails.phones[0].number.replace(/\s+/g, "");
+    
+    // Create WhatsApp message
+    const message = `*New Booking Request*
+Name: ${formData.get('name')}
+Phone: ${formData.get('phone')}
+Email: ${formData.get('email')}
+Pickup: ${formData.get('pickup')}
+Drop: ${formData.get('drop')}
+Date/Time: ${formData.get('datetime')}
+Car Type: ${formData.get('carType')}
+Ride Type: ${formData.get('rideType')}
+Notes: ${formData.get('notes') || 'N/A'}`;
+    
+    // Open WhatsApp
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
   return (
     <section id="booking" className="bg-[#fbf8f8] py-16 dark:bg-background-dark">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
@@ -28,7 +61,7 @@ export const BookingForm = () => {
             </div>
           </div>
 
-          <form className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-2">
               <label className="text-sm font-semibold text-ink">Name</label>
               <input
