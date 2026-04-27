@@ -1,5 +1,4 @@
 import CTASection from "../components/CTASection";
-import Reviews from "../components/Reviews";
 
 const ReviewsPage = () => (
   <main>
@@ -12,7 +11,6 @@ const ReviewsPage = () => (
         </p>
       </div>
     </section>
-    <Reviews />
     <CTASection />
   </main>
 );

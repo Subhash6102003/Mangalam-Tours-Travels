@@ -17,7 +17,7 @@ const PrivacyPolicyPage = () => (
           <strong>Cookies & analytics:</strong> Basic analytics may be used to improve our site performance. No sensitive personal data is tracked.
         </p>
         <p>
-          <strong>Contact:</strong> For any privacy queries, email mangalamtourstravels19@gmail.com.
+          <strong>Contact:</strong> For any privacy queries, email taxiservicesbhopal@gmail.com.
         </p>
       </div>
     </div>

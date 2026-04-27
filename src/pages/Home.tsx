@@ -5,7 +5,6 @@ import FleetGrid from "../components/FleetGrid";
 import Hero from "../components/Hero";
 import JungleSafari from "../components/JungleSafari";
 import Packages from "../components/Packages";
-import Reviews from "../components/Reviews";
 import ServicesGrid from "../components/ServicesGrid";
 
 const Home = () => {
@@ -18,7 +17,6 @@ const Home = () => {
       <ExplorePlaces />
       <JungleSafari />
       <Packages />
-      <Reviews />
       <CTASection />
     </main>
   );

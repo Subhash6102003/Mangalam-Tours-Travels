@@ -86,7 +86,7 @@ Notes: ${formData.get('notes') || 'N/A'}`;
               <input
                 type="email"
                 className="h-12 w-full rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none ring-primary/20 focus:border-primary focus:ring-2 dark:border-zinc-700 dark:bg-zinc-900"
-                placeholder="mangalamtourstravels19@gmail.com"
+                placeholder="taxiservicesbhopal@gmail.com"
                 defaultValue={contactDetails.email}
                 name="email"
               />
